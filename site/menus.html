@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menus · Rasoi Waterfront</title>
+  <meta name="description" content="Explore Rasoi Waterfront's menus — main menu, lunch deal, bottomless brunch, cocktails, wine, beers and spirits." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css?v=25" />
+  <link rel="preload" as="image" href="assets/images/menus-hero.jpg" fetchpriority="high" />
+  <link rel="icon" type="image/png" href="assets/images/rasoi-logo-gold.png" />
+  <link rel="canonical" href="https://www.rasoiwaterfront.co.uk/menus.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Rasoi Waterfront" />
+  <meta property="og:title" content="Menus · Rasoi Waterfront" />
+  <meta property="og:description" content="Dinner, lunch, brunch and tasting menus — Punjabi classics with a modern twist." />
+  <meta property="og:url" content="https://www.rasoiwaterfront.co.uk/menus.html" />
+  <meta property="og:image" content="https://www.rasoiwaterfront.co.uk/assets/images/menus-hero.jpg" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.rasoiwaterfront.co.uk/assets/images/menus-hero.jpg" />
+</head>
+<body>
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <span class="utility-bar__item">Kings Road, Swansea</span>
+      <span class="utility-bar__divider">•</span>
+      <span class="utility-bar__item">Open today 12–3pm &amp; 5–10pm</span>
+      <span class="utility-bar__divider">•</span>
+      <a class="utility-bar__item" href="tel:01792462350">01792 462350</a>
+      <span class="utility-bar__divider utility-bar__divider--push">•</span>
+      <a class="utility-bar__item utility-bar__item--accent" href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener">Gift Vouchers</a>
+    </div>
+  </div>
+
+  <header class="header" id="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="Rasoi" /></a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menus.html" class="active">Menus</a></li>
+          <li class="has-dropdown">
+            <a href="about.html" aria-haspopup="true" aria-expanded="false">Our Story <span class="caret" aria-hidden="true">▾</span></a>
+            <ul class="dropdown" role="menu">
+              <li role="none"><a role="menuitem" href="about.html">Our Story <span class="dropdown__sub">Family recipes &amp; heritage</span></a></li>
+              <li role="none"><a role="menuitem" href="charity.html">Charity <span class="dropdown__sub">Giving back, in India &amp; the UK</span></a></li>
+            </ul>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li class="has-dropdown">
+            <a href="#" aria-haspopup="true" aria-expanded="false">Locations <span class="caret" aria-hidden="true">▾</span></a>
+            <ul class="dropdown" role="menu">
+              <li role="none"><a role="menuitem" href="contact.html">Rasoi Waterfront <span class="dropdown__sub">Swansea SA1 8PL</span></a></li>
+              <li role="none"><a role="menuitem" href="https://rasoiindiankitchen.co.uk" target="_blank" rel="noopener">Rasoi Indian Kitchen <span class="dropdown__sub">Pontlliw SA4 9DY</span></a></li>
+              <li role="none"><a role="menuitem" href="https://www.rasoi-catering.co.uk/" target="_blank" rel="noopener">Rasoi Catering <span class="dropdown__sub">Outdoor &amp; off-site events</span></a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-mobile-extra"><a href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener">Gift Vouchers</a></li>
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a href="https://rasoi-takeaway.square.site/#FPIHHBY5YNAWM4RUS2DVZCUF" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Order</a>
+        <a href="https://www.sevenrooms.com/landing/rasoikingsroad" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Book</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero page-hero--image">
+    <div class="page-hero__media" aria-hidden="true">
+      <img src="assets/images/menus-hero.jpg" alt="" width="2400" height="1600" />
+      <div class="page-hero__overlay"></div>
+    </div>
+    <div class="container page-hero__content">
+      <p class="eyebrow eyebrow--center">Menus</p>
+      <h1 class="display">Passion-infused <em>Punjabi menus.</em></h1>
+      <p>Browse our main menu, lunch, brunch, cocktails, wine and bar lists. Tap any section to open it.</p>
+    </div>
+  </section>
+
+  <!-- Tabbed menu navigation -->
+  <nav class="menu-tabs" aria-label="Menu sections">
+    <div class="container">
+      <ul class="menu-tabs__list" role="tablist">
+        <li><button class="menu-tab is-active" role="tab" aria-selected="true" data-target="alacarte">Main Menu</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="lunch">Lunch</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="setmenu">Set Menu</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="brunch">Bottomless Brunch</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="cocktails">Cocktails</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="wine">Wine</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="beerspirits">Beer &amp; Spirits</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="softdrinks">Soft Drinks</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu content -->
+  <section class="menu-section">
+    <div class="container menu-section__inner">
+
+      <!-- MAIN MENU -->
+      <article class="menu-pane is-active" id="alacarte" role="tabpanel">
+        <p class="menu-pane__intro">Sharing plates, charcoal grills, signature curries, biryanis sealed in dough and breads from the tandoor. Tap a category to view the dishes.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Small Plates</span><span class="menu-cat__chev" aria-hidden="true">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Onion Bhaji <span class="price">6.95</span></h4></div><p>Britain's best loved starter. Thinly sliced onions with herbs, fried. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Chicken <span class="price">8.50</span></h4></div><p>Indo-Chinese chilli chicken tossed with bell peppers and spring onion.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Tandoori Chicken Wings <span class="price">8.50</span></h4></div><p>Smoky tandoori-marinated wings, grilled and served with mint &amp; chilli sauce. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Cheese &amp; Lamb Samosa <span class="price">7.95</span></h4></div><p>Crispy samosas filled with tender lamb and melted cheese, mint chutney alongside.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Samosa Chaat <span class="price">7.95</span></h4></div><p>Crunchy Punjabi samosa, channa masala, chutneys, bujia and pomegranate. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Dahi Puri <span class="price">6.95</span></h4></div><p>Chaat bombs — sweet, sour, tangy, spicy. Served chilled. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Tilka Jinga <span class="price">12.95</span></h4></div><p>King prawns coated in black and white sesame. A twist on a classic. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Broccoli <span class="price">6.95</span></h4></div><p>Deep-fried broccoli tossed in a sweet and spicy chilli sauce. <span class="diet">V VE</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Crispy Paneer Bites <span class="price">7.95</span></h4></div><p>Spice-marinated paneer sticks, fried crisp. Served with mango chutney. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Lamb Bao <span class="price">9.50</span></h4></div><p>Slow-cooked, cardamom &amp; saffron pulled lamb in soft bao buns.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka Naan <span class="price">12.95</span></h4></div><p>Tandoori naan loaded with chicken tikka, salad, yoghurt, mint &amp; chilli sauces. <span class="diet">Serves 2</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Tikka Loaded Fries <span class="price">7.50</span></h4></div><p>Crispy fries topped with chicken tikka and our signature sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka <span class="price">8.50</span></h4></div><p>Chicken tikka bites with a zesty garlic kick and mint freshness. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Tandoori Platter for Two <span class="price">15.95</span></h4></div><p>Achari Chicken Tikka, Seekh Kebab and Paneer Tikka. <span class="diet">GF</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Mains</span><span class="menu-cat__chev" aria-hidden="true">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Butter Chicken <span class="price">13.50</span></h4></div><p>Chicken in a rich tomato, creamy, buttery sauce with fenugreek. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Tikka Masala <span class="price">13.00</span></h4></div><p>A British favourite. Roasted, marinated chicken in a spiced tomato &amp; cream sauce. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Korma <span class="price">13.00</span></h4></div><p>Mild, rich, creamy coconut sauce with flaked almonds. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Jalfrezi <span class="price">13.50</span></h4></div><p>Garlic and mint marinated chicken with ginger, bell peppers and spicy tomato. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Karahi <span class="price">13.00</span></h4></div><p>Charcoal-smoked chicken with cumin, chopped onions, chilli and coriander. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Madras <span class="price">13.00</span></h4></div><p>Hearty, fragrant, spicy onion-and-tomato sauce, sprinkled with chilli. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Pathiya <span class="price">13.00</span></h4></div><p>Chicken in a tangy and spicy tomato sauce. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Murgh Malai Methi <span class="price">13.50</span></h4></div><p>Chicken with fenugreek and mixed spices. Creamy and flavourful. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Balti <span class="price">13.50</span></h4></div><p>Chicken cooked with Balti spices and tomato, served in a traditional Balti.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Desi Lamb <span class="price">16.90</span></h4></div><p>Lamb slow-cooked in homemade garam masala sauce. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Lamb Saag <span class="price">16.90</span></h4></div><p>Tender lamb in a fragrant spinach curry with traditional Indian spices. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Kerelan Fish Curry <span class="price">15.00</span></h4></div><p>Sea bass curry with turmeric, mustard seeds and coconut. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Spicy Mussels <span class="price">16.95</span></h4></div><p>Mussels with chilli and garlic in a creamy, spicy coconut sauce. Garlic &amp; coriander naan alongside. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Punjabi Shahi Paneer <span class="price">13.00</span></h4></div><p>Paneer in a rich, creamy tomato sauce with fenugreek, cinnamon and bay leaves. <span class="diet">V GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Veg Panchratan <span class="price">12.00</span></h4></div><p>Mixed vegetables with cumin and fenugreek tarka. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Black Daal <span class="price">11.50</span></h4></div><p>Dark, rich, deeply flavoured lentils. <span class="diet">V GF</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Grill</span><span class="menu-cat__chev" aria-hidden="true">+</span></summary>
+          <div class="menu-cat__body">
+            <p class="menu-cat__note">Served with Makhani Sauce.</p>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka Shaslik <span class="price">15.50</span></h4></div><p>Chicken in garlic, mint and chilli, cooked in the tandoor with bell peppers and onion. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Paneer Tikka <span class="price">15.00</span></h4></div><p>Chargrilled cottage cheese with caraway seeds and mint chutney. <span class="diet">V GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Tandoori Salmon <span class="price">18.00</span></h4></div><p>Yoghurt-and-spice-marinated salmon, cooked in the clay oven. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Mix Grill <span class="price">21.50</span></h4></div><p>Achari Chicken Tikka, garlic-and-mint Chicken Tikka, Seekh Kebab and Lamb Chop.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Rasoi Lamb Chops <span class="price">28.00</span></h4></div><p>Lamb chops marinated in yoghurt, garlic and cumin, finished in the tandoor.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Biryani</span><span class="menu-cat__chev" aria-hidden="true">+</span></summary>
+          <div class="menu-cat__body">
+            <p class="menu-cat__note">Aromatic spiced rice and meat, sealed with a pastry lid so the magic happens inside. Served with Makhani sauce.</p>
+            <div class="dish dish--line"><h4>Lucknow Chicken <span class="price">15.50</span></h4></div>
+            <div class="dish dish--line"><h4>Delhi Veg <span class="price">14.50</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Hyderabadi Lamb <span class="price">18.90</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Bread &amp; Rice</span><span class="menu-cat__chev" aria-hidden="true">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Tandoori Naan <span class="price">4.20</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Cheese Naan <span class="price">4.70</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Peshawari Naan <span class="price">4.70</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Garlic &amp; Coriander Naan <span class="price">4.70</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Keema Naan <span class="price">4.70</span></h4></div>
+            <div class="dish dish--line"><h4>Roomali Roti <span class="price">4.70</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Steamed Rice <span class="price">4.20</span> <span class="diet">V VE GF</span></h4></div>
+            <div class="dish dish--line"><h4>Pilau Rice <span class="price">4.70</span> <span class="diet">V GF</span></h4></div>
+            <div class="dish dish--line"><h4>Keema Rice <span class="price">4.70</span> <span class="diet">GF</span></h4></div>
+            <div class="dish dish--line"><h4>Mushroom Rice <span class="price">4.70</span> <span class="diet">V GF</span></h4></div>
+            <div class="dish"><div class="dish__head"><h4>Sharing Bread Platter <span class="price">11.50</span></h4></div><p>Garlic &amp; coriander naan, Peshawari naan, Roomali roti. <span class="diet">V</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Sides</span><span class="menu-cat__chev" aria-hidden="true">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Matar Paneer <span class="price">6.90</span></h4></div><p>Paneer and peas in a silky, creamy spiced sauce. <span class="diet">V GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Aubergine Masala <span class="price">6.90</span></h4></div><p>Slow-cooked aubergine with ground masala and coriander. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Bombay Potato <span class="price">6.90</span></h4></div><p>Bombay-spiced sauce over potato wedges. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Tarka Daal <span class="price">6.90</span></h4></div><p>Slow-cooked vegan daal with garlic, ginger and fragrant spices. <span class="diet">V VE GF</span></p></div>
+            <div class="dish dish--line"><h4>Chips <span class="price">4.50</span> <span class="diet">V VE</span></h4></div>
+            <div class="dish dish--line"><h4>Masala Chips <span class="price">4.95</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Poppadum <span class="price">1.10</span> <span class="diet">V VE GF</span></h4></div>
+            <div class="dish dish--line"><h4>Cucumber &amp; Mint Raitha <span class="price">3.95</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Selection of Chutneys <span class="price">4.00</span> <span class="diet">V</span></h4></div>
+          </div>
+        </details>
+
+        <p class="menu-pane__legend"><span class="diet">V</span> Vegetarian &nbsp; <span class="diet">VE</span> Vegan &nbsp; <span class="diet">GF</span> Gluten free. All dishes may contain traces of nuts. Please ask your server about allergens.</p>
+      </article>
+
+      <!-- LUNCH -->
+      <article class="menu-pane" id="lunch" role="tabpanel" hidden>
+        <p class="menu-pane__intro"><strong>£10 Lunch · Mon–Fri, 12–2pm.</strong> A main and a side for £10. Add a starter or dessert for £3.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Choose a main</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Butter Chicken <span class="diet">GF</span></h4></div><p>Chicken in a rich, creamy, buttery tomato sauce with fenugreek.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Tikka Masala <span class="diet">GF</span></h4></div><p>Marinated chicken in a spiced tomato and cream sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Korma <span class="diet">GF</span></h4></div><p>Mild, creamy coconut sauce with flaked almonds.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Madras <span class="diet">GF</span></h4></div><p>Spicy onion-and-tomato sauce with a chilli kick.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Karahi <span class="diet">GF</span></h4></div><p>Charcoal-smoked chicken with cumin, onions and coriander.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Punjabi Shahi Paneer <span class="diet">V GF</span></h4></div><p>Paneer in a creamy tomato sauce with fenugreek.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Veg Panchratan <span class="diet">V VE GF</span></h4></div><p>Mixed vegetables with cumin and fenugreek tarka.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Choose a side</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Tandoori Naan</h4></div>
+            <div class="dish dish--line"><h4>Garlic &amp; Coriander Naan</h4></div>
+            <div class="dish dish--line"><h4>Steamed Rice</h4></div>
+            <div class="dish dish--line"><h4>Pilau Rice</h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Add a starter or dessert (+£3)</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish dish--line"><h4>Onion Bhaji <span class="diet">V VE</span></h4></div>
+            <div class="dish dish--line"><h4>Chilli Broccoli <span class="diet">V VE</span></h4></div>
+            <div class="dish dish--line"><h4>Samosa Chaat <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Chicken Tikka</h4></div>
+            <div class="dish dish--line"><h4>Gulab Jamun <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Kulfi <span class="diet">V</span></h4></div>
+          </div>
+        </details>
+      </article>
+
+      <!-- SET MENU -->
+      <article class="menu-pane" id="setmenu" role="tabpanel" hidden>
+        <p class="menu-pane__intro"><strong>Set Menu · Sun–Thu.</strong> 2 courses £18.95 · 3 courses £22.95. All mains served with rice or a bread (excluding biryani).</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Starters</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Onion Bhaji <span class="diet">V VE GF</span></h4></div><p>Thinly sliced onions with herbs, fried.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Chicken</h4></div><p>Indo-Chinese chicken with bell peppers and spring onion.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Cheese &amp; Lamb Samosa</h4></div><p>Crispy samosas with tender lamb and melted cheese.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Samosa Chaat <span class="diet">V</span></h4></div><p>Punjabi samosa with channa masala, chutneys and pomegranate.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Dahi Puri <span class="diet">V</span></h4></div><p>Sweet, sour, tangy and spicy chaat bombs.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Broccoli <span class="diet">V VE</span></h4></div><p>Deep-fried broccoli in a sweet and spicy chilli sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Crispy Paneer Bites <span class="diet">V</span></h4></div><p>Spice-marinated paneer with mango chutney.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Tikka Loaded Fries</h4></div><p>Crispy fries topped with chicken tikka and our signature sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka <span class="diet">GF</span></h4></div><p>Tikka bites with garlic and mint freshness.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Mains</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Butter Chicken <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Tikka Masala <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Korma <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Karahi <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Madras <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Pathiya <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Murgh Malai Methi <span class="diet">GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Balti</h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Punjabi Shahi Paneer <span class="diet">V GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Veg Panchratan <span class="diet">V VE GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Black Daal <span class="diet">V GF</span></h4></div></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka Shaslik <span class="diet">GF</span></h4></div><p>From the grill — served with Makhani sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Lucknow Chicken Biryani</h4></div><p>Sealed and slow-cooked. Served with Makhani sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Delhi Veg Biryani <span class="diet">V</span></h4></div></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Desserts</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish dish--line"><h4>Gulab Jamun <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Kulfi <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Seasonal Special</h4></div>
+          </div>
+        </details>
+      </article>
+
+      <!-- BOTTOMLESS BRUNCH -->
+      <article class="menu-pane" id="brunch" role="tabpanel" hidden>
+        <p class="menu-pane__intro"><strong>Bottomless Brunch · £35pp.</strong> 90 minutes of unlimited drinks plus a main from the brunch menu. Upgrade to any curry from the main menu with rice or naan for £5.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Drinks (unlimited, 90 minutes)</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Prosecco</h4></div>
+            <div class="dish dish--line"><h4>Cobra</h4></div>
+            <div class="dish dish--line"><h4>House Wine</h4></div>
+            <div class="dish dish--line"><h4>Cocktails</h4></div>
+            <div class="dish dish--line"><h4>A selection of soft drinks</h4></div>
+          </div>
+          <p class="menu-cat__note">Cocktails available: Parma Violet, El Dito Cooler, Pink Cloud, Berry Brush, Januna Phala.</p>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Mains</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka Naan</h4></div><p>Tandoori naan with salad, chicken tikka and yoghurt.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Wings</h4></div><p>Smoky tandoori-marinated wings, grilled to perfection.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Broccoli <span class="diet">V</span></h4></div><p>Deep-fried broccoli in a sweet and spicy chilli sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Lamb Kebab Wrap</h4></div><p>Lamb kebab in soft romali roti with mint and chilli dip.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka Wrap</h4></div><p>Garlic and mint chicken tikka in romali roti, mint and chilli dip.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Loaded Tikka Fries</h4></div><p>Crispy fries topped with chicken tikka and our signature sauce.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chole Batura <span class="diet">V VE</span></h4></div><p>Spiced tangy chickpeas with a soft, fluffy fried leavened bread.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Chicken</h4></div><p>Indo-Chinese chicken with bell peppers and spring onion.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Sides</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Onion Bhaji <span class="price">6.95</span></h4></div>
+            <div class="dish dish--line"><h4>Naan Bread <span class="price">4.70</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Masala Fries <span class="price">4.95</span> <span class="diet">V</span></h4></div>
+            <div class="dish dish--line"><h4>Fries <span class="price">4.50</span> <span class="diet">V VE</span></h4></div>
+            <div class="dish dish--line"><h4>Selection of Chutneys <span class="price">4.00</span></h4></div>
+            <div class="dish dish--line"><h4>Poppadum <span class="price">1.10</span></h4></div>
+          </div>
+        </details>
+      </article>
+
+      <!-- COCKTAILS -->
+      <article class="menu-pane" id="cocktails" role="tabpanel" hidden>
+        <p class="menu-pane__intro">House cocktails built for spice. Mocktails for the curious. Tap a category to view.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Cocktails — £11.50</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Maharaja G+T</h4></div><p>Gin with homemade lemongrass, wild lychee and floral elderflower tonic.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Cacao</h4></div><p>An indulgent dark-chocolate take on the espresso martini. Vanilla vodka, fresh espresso, cacao dust.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Amb Spritz</h4></div><p>Sweet and bitter — Aperol, lemon, rosé wine, mango and soda.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Hadwana Fizz</h4></div><p>Gin, fizz, pamplemousse, rose and watermelon. Sharp, fruity, glittery.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Rainbow Crush</h4></div><p>Tequila, Aperol and peach bitters with notes of pink grapefruit.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Parma Violet</h4></div><p>Violet gin, sugar syrup, lemonade and Parma Violet sweets.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Pink Cloud</h4></div><p>Childhood favourite (with gin). Rhubarb, strawberry and egg white. Vanilla cotton cloud on top.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Berry Brush</h4></div><p>Strawberry paint slowly immersed into citron vodka, apple, lime and fizz.</p></div>
+            <div class="dish"><div class="dish__head"><h4>El Dito Cooler</h4></div><p>White rum, fresh lime, elderflower, soda and mint — somewhere between a mojito and a daiquiri.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Coronita</h4></div><p>Tequila, orange liqueur, lime and chilli, topped with an inverted Corona.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Januna Phala</h4></div><p>Vanilla vodka, passionfruit and lime, whipped with egg white and tonka bean foam.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Amar Anaanas</h4></div><p>Amaretto, fresh pineapple, lemon and a hint of honey, shaken over ice.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Blueberry Long Island</h4></div><p>Vodka, gin, rum, tequila and triple sec with a blueberry infusion. Topped with lemonade.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Mocktails — £6.50</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Mojito</h4></div><p>A true classic — lime, sugar, mint and lemonade. Try with strawberry, passion fruit or mango.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Passion Fruit Mango Margarita</h4></div><p>Tropical and vibrant — ripe mango, passion fruit and lime, served frozen.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Pinacolada</h4></div><p>Sweet and creamy coconut, served in a coconut glass.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Pink Lady</h4></div><p>Strawberry and cream, topped with pink dust.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Iced Chai</h4></div><p>Aromatic chai spices and rich chocolate, served frozen.</p></div>
+          </div>
+        </details>
+      </article>
+
+      <!-- WINE -->
+      <article class="menu-pane" id="wine" role="tabpanel" hidden>
+        <p class="menu-pane__intro">A wine list built for spice — bright whites, soft reds, prosecco and a few celebration bottles.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">White</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Santiano Sauvignon Blanc <span class="price">Btl 24.95 · 175ml 6.60 · 250ml 8.60</span></h4></div><p>Vibrant and fruity, ripe citrus, crisp clean finish. <span class="diet">CHL</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Vivoli Pinot Grigio <span class="price">Btl 25.95 · 175ml 6.80 · 250ml 8.80</span></h4></div><p>Crunchy orchard fruits, hazelnuts, fresh clean finish. <span class="diet">ITA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Blass Chardonnay <span class="price">Btl 25.95 · 175ml 6.80 · 250ml 8.80</span></h4></div><p>Peach, nectarine, citrus, soft spicy oak. <span class="diet">AUS</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Pays d'Oc Viognier <span class="price">29.95</span></h4></div><p>White peach, floral character, subtle almond. <span class="diet">FRA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Rongopai Sauvignon Blanc <span class="price">Btl 33.95 · 175ml 9.00 · 250ml 11.50</span></h4></div><p>Blackcurrant, passion fruit, citrus and flint. <span class="diet">NZL</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>You &amp; Me Albarino <span class="price">Btl 44.95</span></h4></div><p>Refreshing, floral and tropical — Salnés Valley, Rías Baixas. <span class="diet">SPA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Petit Chablis Josselin <span class="price">49.95</span></h4></div><p>Light gold, mineral, fresh fruit and spring blossom. <span class="diet">FRA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Langlois Chateaux Sancerre <span class="price">54.95</span></h4></div><p>Lemon, lime, white peach, mouth-watering acidity. <span class="diet">FRA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chateau d'Yquem 1983 Bordeaux <span class="price">1350.00</span></h4></div><p>Dark amber, butterscotch, dried apricot, fig and spice. <span class="diet">FRA</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Red</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Blass Shiraz <span class="price">Btl 24.95 · 175ml 6.60 · 250ml 8.60</span></h4></div><p>Medium-bodied, rich red fruit, vanilla, soft generous finish. <span class="diet">AUS</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Canyon Road Merlot <span class="price">Btl 25.95 · 175ml 6.80 · 250ml 8.80</span></h4></div><p>Deep cherry, jammy blackberry, vanilla and spice. <span class="diet">USA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Pier 42 Malbec <span class="price">Btl 26.95 · 175ml 7.10 · 250ml 9.00</span></h4></div><p>Well balanced, rich, fruit-forward. <span class="diet">ARG</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>La Joya Gran Reserva Cabernet Sauvignon <span class="price">30.95</span></h4></div><p>Blackberries, cassis, cloves and nutmeg. <span class="diet">CHL</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Solar Viejo Cosecha Tempranillo <span class="price">Btl 31.95</span></h4></div><p>Cherry, plum, hint of liquorice, ripe tannins. <span class="diet">SPA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Acordeon Malbec <span class="price">37.95</span></h4></div><p>Wild blackberry, boysenberry, cocoa, tobacco, violets. <span class="diet">ARG</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Hahn Pinot Noir <span class="price">42.95</span></h4></div><p>Cherry, raspberry, strawberry, hint of earth and spice. <span class="diet">USA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Covila Gran Reserva Rioja <span class="price">49.95</span></h4></div><p>Elegant and rounded, fruit, vanilla, cocoa from oak ageing. <span class="diet">SPA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Barolo Contea Castiglione <span class="price">52.95</span></h4></div><p>Plum, mulberry, ripe strawberry, brown spice and violet. <span class="diet">ITA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Trescoy Châteauneuf-du-Pape <span class="price">74.95</span></h4></div><p>Plum, black cherry, cocoa, clove and a touch of spice. <span class="diet">FRA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Château Margaux 1er Grand Cru 2012 <span class="price">1700.00</span></h4></div><p>Fine-grained tannins, blackcurrants, raspberry, long finish. <span class="diet">FRA</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Rosé &amp; Orange</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Pinot Grigio Principato Blush <span class="price">Btl 24.95 · 175ml 6.60 · 250ml 8.60</span></h4></div><p>Strawberry and white peach, crisp off-dry finish. <span class="diet">ITA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Canyon Road White Zinfandel <span class="price">Btl 25.95 · 175ml 6.80 · 250ml 8.80</span></h4></div><p>Strawberry, cherry and watermelon, smooth crisp finish. <span class="diet">USA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Promenade Provence Rosé <span class="price">36.95</span></h4></div><p>Refreshing, elegant — citrus and red berries. <span class="diet">FRA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Orange Natural Wine <span class="price">34.95</span></h4></div><p>Layered orange zest and pith, refreshing acidity, warm spicy complexity. <span class="diet">ROM</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Prosecco &amp; Champagne</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Il Cortigiano Prosecco 75cl <span class="price">26.95</span></h4></div><p>Pale straw, fresh green apple, light and refreshing. <span class="diet">ITA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Il Cortigiano Prosecco DOC Spumante 20cl <span class="price">8.50</span></h4></div><p>Single-serve. Lemons, apples, pears, smooth creamy bubbles. <span class="diet">ITA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Rivani Prosecco Rosé 75cl <span class="price">28.95</span></h4></div><p>Wild strawberry, cherry, raspberry and fine bubbles. <span class="diet">ITA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Freixenet 0% 20cl <span class="price">8.00</span></h4></div><p>Green apple and citrus, balanced acidity, alcohol free. <span class="diet">SPA</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Moët &amp; Chandon <span class="price">75.00</span></h4></div><p>White flower, pastry, walnut, hazelnut, ripe pear and white peach.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Veuve Clicquot <span class="price">79.00</span></h4></div><p>Freshness and power, rich fruit, mouth-filling mousse.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Laurent Perrier Rosé <span class="price">110.00</span></h4></div><p>Light-bodied, strawberry, cherry, watermelon, smooth crisp finish.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Dom Pérignon <span class="price">240.00</span></h4></div><p>The best known of the deluxe Champagnes.</p></div>
+          </div>
+        </details>
+      </article>
+
+      <!-- BEER & SPIRITS -->
+      <article class="menu-pane" id="beerspirits" role="tabpanel" hidden>
+        <p class="menu-pane__intro">Draught, bottle and a deep spirits library.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Draught Beer</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Madri 4.6% <span class="price">Half 3.60 · Pint 6.20</span></h4></div><p>Light golden, crisp and clean with a short, bitter finish.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Cobra 4.5% <span class="price">Half 3.60 · Pint 6.20</span></h4></div><p>Brewed smooth for food, fewer bubbles for a more sophisticated taste.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Bottled Beer</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Kingfisher 4.5% <span class="price">330ml 4.50</span></h4></div>
+            <div class="dish dish--line"><h4>Cobra 4.5% <span class="price">330ml 4.50</span></h4></div>
+            <div class="dish dish--line"><h4>Heineken Zero 0% <span class="price">330ml 4.00</span></h4></div>
+            <div class="dish dish--line"><h4>Corona 4.5% <span class="price">330ml 4.50</span></h4></div>
+            <div class="dish dish--line"><h4>Peroni 5.0% <span class="price">330ml 4.50</span></h4></div>
+            <div class="dish dish--line"><h4>Crabbies Ginger Beer 4.0% <span class="price">5.50</span></h4></div>
+            <div class="dish dish--line"><h4>Felinfoel IPA 4.0% <span class="price">500ml 6.00</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Cider</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Rekorderlig 500ml <span class="price">6.00</span></h4></div><p>Passionfruit 4.5% · Wild Berries 4.0% · Strawberry &amp; Lime 4.0%.</p></div>
+            <div class="dish dish--line"><h4>Orchard Gold 4.9% 500ml <span class="price">6.00</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Vodka</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Smirnoff <span class="price">25ml 3.50</span></h4></div>
+            <div class="dish dish--line"><h4>Grey Goose <span class="price">25ml 5.00</span></h4></div>
+            <div class="dish dish--line"><h4>AU Vodka Grape <span class="price">25ml 5.00</span></h4></div>
+            <div class="dish dish--line"><h4>AU Vodka Fruit Punch <span class="price">25ml 5.00</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Gin</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Gordons <span class="price">25ml 3.50</span></h4></div>
+            <div class="dish dish--line"><h4>Bombay Sapphire <span class="price">25ml 3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Raspberry Gin <span class="price">25ml 3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Rhubarb &amp; Ginger Gin <span class="price">25ml 3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Beefeater Blood Orange <span class="price">25ml 3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Hendricks <span class="price">25ml 4.20</span></h4></div>
+            <div class="dish dish--line"><h4>Monkey 47 <span class="price">25ml 7.50</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Rum</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Bacardi <span class="price">25ml 3.50</span></h4></div>
+            <div class="dish dish--line"><h4>Captain Morgan Spiced <span class="price">25ml 3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Kraken <span class="price">25ml 4.00</span></h4></div>
+            <div class="dish dish--line"><h4>Bullion Spiced Caramel <span class="price">25ml 5.50</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Whisky</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Jack Daniels <span class="price">25ml 3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Glenfiddich 12 <span class="price">25ml 4.80</span></h4></div>
+            <div class="dish dish--line"><h4>Penderyn Welsh Malt <span class="price">25ml 4.80</span></h4></div>
+            <div class="dish dish--line"><h4>Macallan 12 yrs <span class="price">25ml 9.00</span></h4></div>
+            <div class="dish dish--line"><h4>Amrut Single Malt <span class="price">25ml 9.50</span></h4></div>
+            <div class="dish dish--line"><h4>Johnnie Walker Black Label <span class="price">25ml 4.50</span></h4></div>
+            <div class="dish dish--line"><h4>Johnnie Walker Blue Label <span class="price">25ml 17.50</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Tequila</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Sierra Tequila Blanco <span class="price">3.20</span></h4></div>
+            <div class="dish dish--line"><h4>Tequila Rose <span class="price">3.20</span></h4></div>
+            <div class="dish dish--line"><h4>Don Julio <span class="price">7.50</span></h4></div>
+            <div class="dish dish--line"><h4>Don Julio 1942 <span class="price">9.50</span></h4></div>
+            <div class="dish dish--line"><h4>Clase Azul Reposado <span class="price">13.95</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Cognac</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Courvoisier VSOP <span class="price">25ml 4.50</span></h4></div>
+            <div class="dish dish--line"><h4>Remy Martin VSOP <span class="price">25ml 6.50</span></h4></div>
+            <div class="dish dish--line"><h4>Hennessy XO <span class="price">25ml 21.00</span></h4></div>
+          </div>
+        </details>
+      </article>
+
+      <!-- SOFT DRINKS & LASSI -->
+      <article class="menu-pane" id="softdrinks" role="tabpanel" hidden>
+        <p class="menu-pane__intro">Juices, soft drinks and lassi.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">Juices &amp; Soft Drinks</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish dish--line"><h4>J20 (Orange &amp; Passion Fruit / Apple &amp; Mango) <span class="price">3.50</span></h4></div>
+            <div class="dish dish--line"><h4>Orange Juice <span class="price">Glass 1.95 · Pint 3.00</span></h4></div>
+            <div class="dish dish--line"><h4>Pineapple Juice <span class="price">Glass 1.95 · Pint 3.00</span></h4></div>
+            <div class="dish dish--line"><h4>Cranberry Juice <span class="price">Glass 1.95 · Pint 3.00</span></h4></div>
+            <div class="dish dish--line"><h4>Apple Juice 250ml <span class="price">3.00</span></h4></div>
+            <div class="dish dish--line"><h4>Pepsi <span class="price">330ml 3.20</span></h4></div>
+            <div class="dish dish--line"><h4>Pepsi Max <span class="price">330ml 3.20</span></h4></div>
+            <div class="dish dish--line"><h4>Lemonade <span class="price">Glass 1.95 · Pint 3.00</span></h4></div>
+            <div class="dish dish--line"><h4>Soda Water <span class="price">Glass 1.65 · Pint 3.00</span></h4></div>
+            <div class="dish dish--line"><h4>Appletiser <span class="price">3.20</span></h4></div>
+            <div class="dish dish--line"><h4>Sparkling Water <span class="price">330ml 2.50 · 750ml 4.00</span></h4></div>
+            <div class="dish dish--line"><h4>Still Water <span class="price">330ml 2.50 · 750ml 4.00</span></h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Lassi</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <div class="dish dish--line"><h4>Mango Lassi <span class="price">3.75</span></h4></div>
+            <div class="dish dish--line"><h4>Rose &amp; Cardamom Lassi <span class="price">3.75</span></h4></div>
+          </div>
+        </details>
+      </article>
+
+      <p class="menu-allergen-note">
+        <strong>Allergens &amp; dietary requirements.</strong> Some of our dishes contain allergens including nuts, dairy, gluten, mustard, sesame and seafood. If you have an allergy, intolerance or any dietary requirements, please <strong>let a member of our team know before ordering</strong> and we'll be glad to guide you through the menu. Dishes marked <span class="diet">V</span> are vegetarian, <span class="diet">VE</span> vegan, <span class="diet">GF</span> gluten-free. Prices in £.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="section book" id="book">
+    <div class="container book__inner">
+      <p class="eyebrow eyebrow--center">Reserve</p>
+      <h2 class="display">Ready <em>when you are.</em></h2>
+      <p>Book a table, order takeaway, or send a gift voucher. Please note allergens &amp; dietary requirements when booking.</p>
+      <div class="book__ctas">
+        <a href="https://www.sevenrooms.com/landing/rasoikingsroad" target="_blank" rel="noopener" class="btn btn--primary btn--large">Reserve a table</a>
+        <a href="https://rasoi-takeaway.square.site/#FPIHHBY5YNAWM4RUS2DVZCUF" target="_blank" rel="noopener" class="btn btn--ghost btn--large">Order takeaway</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="Rasoi" class="footer__logo" />
+        <p>Award-winning Punjabi dining on the Swansea waterfront.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <address>Unit 3-4, J-Shed<br/>Kings Road<br/>Swansea SA1 8PL</address>
+        <a href="https://maps.google.com/?q=Rasoi+Waterfront+Swansea" target="_blank" rel="noopener" class="link-arrow link-arrow--light">Get directions</a>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <dl class="hours">
+          <dt>Sun–Thu</dt><dd>12–3pm · 5–10pm</dd>
+          <dt>Fri–Sat</dt><dd>12–3pm · 5–11pm</dd>
+        </dl>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="plain-list">
+          <li><a href="tel:01792462350">01792 462350</a></li>
+          <li><a href="mailto:info@rasoiwaterfront.co.uk">info@rasoiwaterfront.co.uk</a></li>
+        </ul>
+        <h4 class="mt">Follow</h4>
+        <ul class="social">
+          <li><a href="https://instagram.com/rasoiwales" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/rasoiwaterfront" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>&copy; <span id="year">2026</span> Rasoi Waterfront. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener">Gift Vouchers</a></p>
+    </div>
+    <div class="container footer__sanskrit"><img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="ਰਸੋਈ" /></div>
+  </footer>
+
+  <script src="assets/script.js?v=25"></script>
+</body>
+</html>

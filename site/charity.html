@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity · Rasoi Waterfront</title>
+  <meta name="description" content="Beyond the table — Rasoi's charity work funds school sponsorships, meals across India and Wales, free medical care and eye camps for those who otherwise have no access." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css?v=25" />
+  <link rel="icon" type="image/png" href="assets/images/rasoi-logo-gold.png" />
+  <link rel="canonical" href="https://www.rasoiwaterfront.co.uk/charity.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Rasoi Waterfront" />
+  <meta property="og:title" content="Charity · Rasoi Waterfront" />
+  <meta property="og:description" content="Hospitality that reaches further than the table — school sponsorships, 100,000+ meals, free medical care and eye camps." />
+  <meta property="og:url" content="https://www.rasoiwaterfront.co.uk/charity.html" />
+  <meta property="og:image" content="https://www.rasoiwaterfront.co.uk/assets/images/interior-wide.jpg" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.rasoiwaterfront.co.uk/assets/images/interior-wide.jpg" />
+
+  <style>
+    /* "Sit with us" reserve background */
+    .book::before {
+      background:
+        linear-gradient(180deg, rgba(23,20,15,0.72), rgba(23,20,15,0.86)),
+        url('assets/images/events-table.jpg') center/cover;
+    }
+    /* 4-up stats override for this page */
+    .charity-stats--four .charity-stats__grid { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 960px) { .charity-stats--four .charity-stats__grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .charity-stats--four .charity-stats__grid { grid-template-columns: 1fr; } }
+    .charity-stat__plus {
+      font-size: 0.55em;
+      vertical-align: 0.32em;
+      margin-left: 2px;
+      color: var(--gold-500);
+    }
+
+    /* Small partnership cards — "More of our work" */
+    .charity-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .charity-mini {
+      background: var(--cream);
+      border: 1px solid var(--border-soft);
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .charity-mini__media {
+      margin: 0;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+    .charity-mini__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .charity-mini__body { padding: 22px 22px 24px; }
+    .charity-mini__body .eyebrow { margin: 0 0 8px; }
+    .charity-mini__body h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 0 0 10px;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .charity-mini__body p {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--charcoal);
+      margin: 0 0 12px;
+    }
+    .charity-mini__body .link-arrow { margin-top: 4px; font-size: 0.62rem; }
+    @media (max-width: 1024px) {
+      .charity-mini-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .charity-mini-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <span class="utility-bar__item">Kings Road, Swansea</span>
+      <span class="utility-bar__divider">•</span>
+      <span class="utility-bar__item">Open today 12–3pm &amp; 5–10pm</span>
+      <span class="utility-bar__divider">•</span>
+      <a class="utility-bar__item" href="tel:01792462350">01792 462350</a>
+      <span class="utility-bar__divider utility-bar__divider--push">•</span>
+      <a class="utility-bar__item utility-bar__item--accent" href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener">Gift Vouchers</a>
+    </div>
+  </div>
+
+  <header class="header" id="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="Rasoi" /></a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menus.html">Menus</a></li>
+          <li class="has-dropdown">
+            <a href="about.html" aria-haspopup="true" aria-expanded="false">Our Story <span class="caret" aria-hidden="true">▾</span></a>
+            <ul class="dropdown" role="menu">
+              <li role="none"><a role="menuitem" href="about.html">Our Story <span class="dropdown__sub">Family recipes &amp; heritage</span></a></li>
+              <li role="none"><a role="menuitem" href="charity.html" class="active">Charity <span class="dropdown__sub">Giving back, in India &amp; the UK</span></a></li>
+            </ul>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li class="has-dropdown">
+            <a href="#" aria-haspopup="true" aria-expanded="false">Locations <span class="caret" aria-hidden="true">▾</span></a>
+            <ul class="dropdown" role="menu">
+              <li role="none"><a role="menuitem" href="contact.html">Rasoi Waterfront <span class="dropdown__sub">Swansea SA1 8PL</span></a></li>
+              <li role="none"><a role="menuitem" href="https://rasoiindiankitchen.co.uk" target="_blank" rel="noopener">Rasoi Indian Kitchen <span class="dropdown__sub">Pontlliw SA4 9DY</span></a></li>
+              <li role="none"><a role="menuitem" href="https://www.rasoi-catering.co.uk/" target="_blank" rel="noopener">Rasoi Catering <span class="dropdown__sub">Outdoor &amp; off-site events</span></a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-mobile-extra"><a href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener">Gift Vouchers</a></li>
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a href="https://rasoi-takeaway.square.site/#FPIHHBY5YNAWM4RUS2DVZCUF" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Order</a>
+        <a href="https://www.sevenrooms.com/landing/rasoikingsroad" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Book</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Charity</p>
+      <h1 class="display">Beyond <em>the table.</em></h1>
+      <p>Rasoi was built on the idea that hospitality should reach further than the table.
+        Every booking, every takeaway, every shared plate quietly funds something else.</p>
+    </div>
+  </section>
+
+  <section class="about-lead">
+    <div class="container about-lead__grid">
+      <div class="about-lead__media">
+        <img src="assets/images/interior-wide.jpg" alt="The Rasoi dining room on the Swansea waterfront" />
+      </div>
+      <div class="about-lead__copy">
+        <p class="eyebrow">Our Belief</p>
+        <h2 class="display">A kitchen that gives <em>more than it takes.</em></h2>
+        <p>From the very beginning, Rasoi was built on a simple principle —
+          that a busy restaurant should mean more than a busy kitchen. A share of every plate, every
+          takeaway and every event quietly goes back out into the world: into schools, into meals,
+          into clinics for people who otherwise have nothing.</p>
+        <p>Years on, that principle is the reason we open every night.</p>
+        <p><em>"When you sit with us, you're already part of it."</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="charity-stats charity-stats--four">
+    <div class="container">
+      <header class="section__head section__head--center" style="text-align:center; margin: 0 auto 40px;">
+        <p class="eyebrow eyebrow--center">The Impact So Far</p>
+        <h2 class="display">Quietly, every <em>single day.</em></h2>
+      </header>
+      <ul class="charity-stats__grid">
+        <li class="charity-stat">
+          <span class="charity-stat__num">160<span class="charity-stat__plus">+</span></span>
+          <span class="charity-stat__label">Children sponsored through school</span>
+        </li>
+        <li class="charity-stat">
+          <span class="charity-stat__num">100,000<span class="charity-stat__plus">+</span></span>
+          <span class="charity-stat__label">Meals served across India &amp; Wales</span>
+        </li>
+        <li class="charity-stat">
+          <span class="charity-stat__num">Free</span>
+          <span class="charity-stat__label">Medical care &amp; eye camps</span>
+        </li>
+        <li class="charity-stat">
+          <span class="charity-stat__num">14<span class="charity-stat__plus">yrs</span></span>
+          <span class="charity-stat__label">Of giving back, since 2011</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container events-teaser__grid">
+      <div class="events-teaser__copy">
+        <p class="eyebrow">School Sponsorship</p>
+        <h2 class="display">Putting more than 160 children <em>through school.</em></h2>
+        <p>For years we've sponsored children across rural India through their schooling — uniforms,
+          books, fees, meals — children whose families could not otherwise afford to send them.
+          Education is the single biggest lever any family can pull, and we're proud to keep pulling
+          on it. Every dish at Rasoi helps fund another year in a classroom somewhere.</p>
+      </div>
+      <div class="events-teaser__media">
+        <img src="assets/images/charity-india-kids.jpg" alt="Children in India holding the Rasoi sign — sponsored through school by Rasoi" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container events-teaser__grid">
+      <div class="events-teaser__media">
+        <img src="assets/images/food-tandoor.jpg" alt="Chefs at the tandoor in the Rasoi kitchen" />
+      </div>
+      <div class="events-teaser__copy">
+        <p class="eyebrow">100,000+ Meals</p>
+        <h2 class="display">Hot food, in the hands <em>of those who need it.</em></h2>
+        <p>Across both India and Wales, Rasoi has served more than 100,000 free meals — to people
+          sleeping rough, to families in crisis, to community centres and shelters. We don't keep
+          a tally for the number on a press release; we keep it because every plate matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container events-teaser__grid">
+      <div class="events-teaser__copy">
+        <p class="eyebrow">Medical &amp; Eye Camps</p>
+        <h2 class="display">Free care for those <em>who couldn't otherwise reach it.</em></h2>
+        <p>We fund and run free medical clinics and eye camps in regions of India where access to
+          basic healthcare is simply not available — restoring sight, treating preventable illness,
+          and bringing dignity back to people who'd been written off.</p>
+      </div>
+      <div class="events-teaser__media">
+        <img src="assets/images/interior-banquette.jpg" alt="Hand-carved seating at Rasoi" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container">
+      <header class="section__head section__head--center" style="text-align:center; margin: 0 auto 24px;">
+        <p class="eyebrow eyebrow--center">More of our work</p>
+        <h2 class="display">Partnerships <em>that go further.</em></h2>
+        <p style="max-width: 56ch; margin: 14px auto 0; color: var(--charcoal);">A few of the projects and partners that share the table with us — at home in Swansea and across India.</p>
+      </header>
+      <div class="charity-mini-grid">
+        <article class="charity-mini">
+          <figure class="charity-mini__media">
+            <img src="assets/images/charity-fif-christmas.jpg" alt="Rasoi delivering Christmas curry meals to children at a Faith in Families community centre" loading="lazy" />
+          </figure>
+          <div class="charity-mini__body">
+            <p class="eyebrow">Swansea · Faith in Families</p>
+            <h3>Christmas in Blaenymaes</h3>
+            <p>Eighty-five festive curry meals delivered to children at the Blaenymaes community centre — Christmas 2023, and counting.</p>
+            <a href="https://faithinfamilies.wales/" target="_blank" rel="noopener" class="link-arrow">Faith in Families</a>
+          </div>
+        </article>
+
+        <article class="charity-mini">
+          <figure class="charity-mini__media">
+            <img src="assets/images/charity-fif-school-1.jpg" alt="Rasoi serving butter chicken at a Back to School with a Cwtch event in Swansea" loading="lazy" />
+          </figure>
+          <div class="charity-mini__body">
+            <p class="eyebrow">Summer 2025 · Cwtch Campaign</p>
+            <h3>Back to School with a Cwtch</h3>
+            <p>1,400+ free meals and close to 1,000 backpacks handed out across Bonymaen, Clase and Portmead.</p>
+          </div>
+        </article>
+
+        <article class="charity-mini">
+          <figure class="charity-mini__media">
+            <img src="assets/images/charity-fif-school-2.jpg" alt="Children collecting school supplies at a Faith in Families community event" loading="lazy" />
+          </figure>
+          <div class="charity-mini__body">
+            <p class="eyebrow">In Punjab · Sikhi Sewa Mission</p>
+            <h3>A trade and a start</h3>
+            <p>Sewing machines and training for young women, plus help facilitating weddings and home starter packs for newlywed couples.</p>
+          </div>
+        </article>
+
+        <article class="charity-mini">
+          <figure class="charity-mini__media">
+            <img src="assets/images/events-table.jpg" alt="A Rasoi waiter setting a banquet table" loading="lazy" />
+          </figure>
+          <div class="charity-mini__body">
+            <p class="eyebrow">Swansea · The Wallich</p>
+            <h3>A warm welcome at our table</h3>
+            <p>Each year we open our doors to host hostel residents of the homelessness charity for a complimentary festive meal.</p>
+            <a href="https://www.thewallich.com/" target="_blank" rel="noopener" class="link-arrow">The Wallich</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section book" id="book">
+    <div class="container book__inner">
+      <p class="eyebrow eyebrow--center">Be part of it</p>
+      <h2 class="display">Every booking <em>becomes more.</em></h2>
+      <p>Sit with us on the waterfront, take our kitchen home, or send a gift voucher.
+        Every time you do, you're part of something that goes well beyond the table.</p>
+      <div class="book__ctas">
+        <a href="https://www.sevenrooms.com/landing/rasoikingsroad" target="_blank" rel="noopener" class="btn btn--primary btn--large">Reserve a table</a>
+        <a href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener" class="btn btn--ghost btn--large">Buy a gift voucher</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="Rasoi" class="footer__logo" />
+        <p>Award-winning Punjabi dining on the Swansea waterfront.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <address>Unit 3-4, J-Shed<br/>Kings Road<br/>Swansea SA1 8PL</address>
+        <a href="https://maps.google.com/?q=Rasoi+Waterfront+Swansea" target="_blank" rel="noopener" class="link-arrow link-arrow--light">Get directions</a>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <dl class="hours">
+          <dt>Sun–Thu</dt><dd>12–3pm · 5–10pm</dd>
+          <dt>Fri–Sat</dt><dd>12–3pm · 5–11pm</dd>
+        </dl>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="plain-list">
+          <li><a href="tel:01792462350">01792 462350</a></li>
+          <li><a href="mailto:info@rasoiwaterfront.co.uk">info@rasoiwaterfront.co.uk</a></li>
+        </ul>
+        <h4 class="mt">Follow</h4>
+        <ul class="social">
+          <li><a href="https://instagram.com/rasoiwales" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/rasoiwaterfront" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>&copy; <span id="year">2026</span> Rasoi Waterfront. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="https://app.squareup.com/gift/MLWVNGW1SMGBS/order" target="_blank" rel="noopener">Gift Vouchers</a></p>
+    </div>
+    <div class="container footer__sanskrit"><img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="ਰਸੋਈ" /></div>
+  </footer>
+
+  <script src="assets/script.js?v=25"></script>
+</body>
+</html>

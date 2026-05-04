@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Preview · Rasoi Waterfront</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Porter';
+      src: url('assets/fonts/Porter_Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Sacramento';
+      src: url('assets/fonts/Sacramento-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Flood';
+      src: url('assets/fonts/Flood_Std_Regular.otf') format('opentype');
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    /* Tokens — current */
+    :root {
+      --current-gold:   #9b6f2c;
+      --current-ink:    #1B1714;
+      --current-cream:  #FCF6E8;
+      --current-charcoal: #5a554d;
+
+      --brand-gold:     #C4A764;
+      --brand-ink:      #1F2228;
+      --brand-white:    #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #f5f1e9;
+      color: #3a342c;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 60px 32px; }
+    h1, h2, h3, .display {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      letter-spacing: 0.005em;
+      color: #1F2228;
+      margin: 0;
+    }
+    h1 { font-size: 3.4rem; line-height: 1.05; }
+    h2 { font-size: 2rem; margin: 0 0 18px; }
+    h3 { font-size: 1.4rem; margin: 0 0 10px; }
+    p { margin: 0 0 14px; }
+    em { font-style: italic; color: #9b6f2c; }
+
+    .page-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 60px;
+    }
+    .page-head .kicker {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      color: #9b6f2c;
+      margin-bottom: 18px;
+    }
+    .page-head p { color: #5a554d; }
+
+    /* Comparison block */
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin: 0 0 70px;
+      border: 1px solid rgba(31,34,40,0.12);
+      background: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .compare__col {
+      padding: 44px 40px 48px;
+      position: relative;
+    }
+    .compare__col + .compare__col {
+      border-left: 1px solid rgba(31,34,40,0.10);
+    }
+    .compare__tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+    .tag--now {
+      background: #ece4d2;
+      color: #5a554d;
+    }
+    .tag--brand {
+      background: var(--brand-gold);
+      color: var(--brand-ink);
+    }
+
+    .section-title {
+      grid-column: 1 / -1;
+      padding: 30px 40px 22px;
+      background: #f9f3e3;
+      border-bottom: 1px solid rgba(31,34,40,0.08);
+    }
+    .section-title small {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      color: #9b6f2c;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .section-title h2 {
+      font-size: 1.7rem;
+      margin: 0;
+    }
+
+    /* === 1. LOGO === */
+    .logo-stage {
+      background: var(--brand-ink);
+      padding: 60px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+      border-radius: 4px;
+    }
+    .logo-stage img.now {
+      height: 86px;
+      width: auto;
+    }
+    .logo-stage img.brand {
+      height: 130px;
+      width: auto;
+    }
+    .logo-note {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #5a554d;
+      text-align: center;
+    }
+
+    /* === 2. COLORS === */
+    .swatch-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .swatch {
+      border-radius: 3px;
+      overflow: hidden;
+      border: 1px solid rgba(31,34,40,0.12);
+    }
+    .swatch__chip {
+      height: 110px;
+    }
+    .swatch__meta {
+      padding: 14px 16px 16px;
+      background: #fff;
+    }
+    .swatch__meta .name {
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1F2228;
+      margin-bottom: 4px;
+    }
+    .swatch__meta .hex {
+      font-family: ui-monospace, Menlo, monospace;
+      font-size: 0.85rem;
+      color: #5a554d;
+    }
+
+    /* === 3. TYPE — Eyebrows === */
+    .type-stage {
+      background: #fff;
+      padding: 36px 32px 38px;
+      border-radius: 3px;
+      border: 1px solid rgba(31,34,40,0.10);
+    }
+    .eyebrow-now {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #9b6f2c;
+      margin-bottom: 16px;
+    }
+    .eyebrow-brand {
+      font-family: 'Porter', 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      margin-bottom: 16px;
+    }
+    .type-stage .display {
+      font-size: 2.1rem;
+      line-height: 1.05;
+    }
+    .type-stage .display em {
+      color: var(--brand-gold);
+      font-style: italic;
+    }
+    .type-stage p {
+      margin-top: 18px;
+      color: #5a554d;
+      font-size: 0.98rem;
+    }
+
+    /* === 4. ITALIC quote === */
+    .quote-stage {
+      background: #fff;
+      padding: 42px 36px;
+      border-radius: 3px;
+      border: 1px solid rgba(31,34,40,0.10);
+      text-align: center;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quote-now em {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.6rem;
+      color: #1F2228;
+      line-height: 1.3;
+    }
+    .quote-brand .scr {
+      font-family: 'Sacramento', cursive;
+      font-size: 2.6rem;
+      color: var(--brand-gold);
+      line-height: 1.05;
+      display: block;
+    }
+    .quote-brand small {
+      display: block;
+      margin-top: 14px;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      color: #5a554d;
+    }
+
+    /* === 5. HERO MOCK === */
+    .hero-mock {
+      grid-column: 1 / -1;
+      position: relative;
+      height: 460px;
+      background:
+        linear-gradient(180deg, rgba(31,34,40,0.55), rgba(31,34,40,0.85)),
+        url('assets/images/hero-bar.jpg') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: #fff;
+      padding: 30px;
+    }
+    .hero-mock--now {
+      background:
+        linear-gradient(180deg, rgba(27,23,20,0.55), rgba(27,23,20,0.82)),
+        url('assets/images/hero-bar.jpg') center/cover;
+    }
+    .hero-mock .eyebrow {
+      font-family: 'Porter', 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      margin-bottom: 22px;
+    }
+    .hero-mock--now .eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.32em;
+      color: #c69a3d;
+    }
+    .hero-mock h1 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #fff;
+      font-size: 3.4rem;
+      max-width: 700px;
+      line-height: 1.05;
+    }
+    .hero-mock h1 em {
+      color: var(--brand-gold);
+      font-style: italic;
+    }
+    .hero-mock--now h1 em {
+      color: #c69a3d;
+    }
+    .hero-mock .sub {
+      margin-top: 18px;
+      max-width: 56ch;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.6;
+    }
+    .hero-mock img.logo-overlay {
+      position: absolute;
+      top: 24px;
+      left: 30px;
+      height: 54px;
+    }
+
+    /* === 6. SANSKRIT === */
+    .sanskrit-stage {
+      background: var(--brand-ink);
+      padding: 60px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      min-height: 240px;
+      border-radius: 4px;
+    }
+    .sanskrit-stage img {
+      height: 64px;
+      opacity: 0.92;
+    }
+    .sanskrit-stage .footer-mock {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.8rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+    .sanskrit-bare {
+      background: #fff;
+      padding: 60px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 240px;
+      border-radius: 4px;
+      color: #b0a99c;
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    /* notes */
+    .legend {
+      grid-column: 1 / -1;
+      padding: 22px 40px 28px;
+      background: #fbf6e8;
+      border-top: 1px solid rgba(31,34,40,0.08);
+      font-size: 0.92rem;
+      color: #5a554d;
+    }
+    .legend strong { color: #1F2228; }
+
+    .footer-note {
+      margin-top: 40px;
+      padding: 28px;
+      background: #1F2228;
+      color: #fff;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .footer-note p { margin: 0; color: rgba(255,255,255,0.78); font-size: 0.95rem; }
+    .footer-note strong { color: var(--brand-gold); font-weight: 600; }
+
+    @media (max-width: 800px) {
+      .compare { grid-template-columns: 1fr; }
+      .compare__col + .compare__col { border-left: 0; border-top: 1px solid rgba(31,34,40,0.10); }
+      .swatch-row { grid-template-columns: 1fr; }
+      h1 { font-size: 2.4rem; }
+      .hero-mock h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">Brand Preview</div>
+      <h1>Rasoi Waterfront — <em>brand alignment proposal</em></h1>
+      <p>Side-by-side comparison of the live site (left) vs the proposed brand-book version (right). Layout is unchanged — only logo, palette and typography. Scroll through, then tell me which changes to ship.</p>
+    </header>
+
+    <!-- 1. LOGO -->
+    <section class="compare">
+      <div class="section-title">
+        <small>1 of 6 · Logo</small>
+        <h2>Vector logo with the official Waterfront sub-mark</h2>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--now">Live now</span>
+        <div class="logo-stage">
+          <img class="now" src="assets/images/rasoi-logo-gold.png" alt="Current PNG logo" />
+        </div>
+        <p class="logo-note">PNG · pixelated when scaled · no "WATERFRONT" sub-mark</p>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--brand">Brand book</span>
+        <div class="logo-stage">
+          <img class="brand" src="assets/brand/Rasoi_Waterfront.svg" alt="Official Rasoi Waterfront SVG" />
+        </div>
+        <p class="logo-note">SVG · sharp at any size · authentic dual-mark identity</p>
+      </div>
+      <div class="legend">
+        <strong>What this changes:</strong> the header logo on every page. The PNG file in <code>assets/images/</code> stays untouched as a fallback.
+      </div>
+    </section>
+
+    <!-- 2. COLOURS -->
+    <section class="compare">
+      <div class="section-title">
+        <small>2 of 6 · Colour palette</small>
+        <h2>Brand-spec gold and ink</h2>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--now">Live now</span>
+        <div class="swatch-row">
+          <div class="swatch">
+            <div class="swatch__chip" style="background:#9b6f2c"></div>
+            <div class="swatch__meta">
+              <div class="name">Gold (current)</div>
+              <div class="hex">#9B6F2C</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch__chip" style="background:#1B1714"></div>
+            <div class="swatch__meta">
+              <div class="name">Ink (current)</div>
+              <div class="hex">#1B1714</div>
+            </div>
+          </div>
+        </div>
+        <p class="logo-note">Warmer, browner — closer to terracotta than the brand spec.</p>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--brand">Brand book</span>
+        <div class="swatch-row">
+          <div class="swatch">
+            <div class="swatch__chip" style="background:#C4A764"></div>
+            <div class="swatch__meta">
+              <div class="name">Gold (brand)</div>
+              <div class="hex">#C4A764</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch__chip" style="background:#1F2228"></div>
+            <div class="swatch__meta">
+              <div class="name">Ink (brand)</div>
+              <div class="hex">#1F2228</div>
+            </div>
+          </div>
+        </div>
+        <p class="logo-note">Lighter, brighter, more luxurious gold. Cooler ink with subtle blue undertone.</p>
+      </div>
+      <div class="legend">
+        <strong>What this changes:</strong> all eyebrows, button highlights, "em" italic accents, navigation hovers, and dark backgrounds use these new tokens. The cream <code>#FCF6E8</code> page background stays — keeps the restaurant warmth.
+      </div>
+    </section>
+
+    <!-- 3. TYPE — eyebrow -->
+    <section class="compare">
+      <div class="section-title">
+        <small>3 of 6 · Eyebrows &amp; tracked uppercase</small>
+        <h2>Porter Bold for accents</h2>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--now">Live now</span>
+        <div class="type-stage">
+          <p class="eyebrow-now">Our Heritage</p>
+          <h2 class="display">From Punjab summers to the <em>Swansea waterfront.</em></h2>
+          <p>Rasoi — the Punjabi word for kitchen — is exactly what we set out to build…</p>
+        </div>
+        <p class="logo-note">Eyebrow in Montserrat · 0.32em letter-spacing · current gold.</p>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--brand">Brand book</span>
+        <div class="type-stage">
+          <p class="eyebrow-brand">Our Heritage</p>
+          <h2 class="display">From Punjab summers to the <em>Swansea waterfront.</em></h2>
+          <p>Rasoi — the Punjabi word for kitchen — is exactly what we set out to build…</p>
+        </div>
+        <p class="logo-note">Eyebrow in Porter Bold · wider 0.42em tracking · brand gold. Authentic to the brand pack.</p>
+      </div>
+      <div class="legend">
+        <strong>What this changes:</strong> every page eyebrow ("Our Heritage", "Charity", "The Philosophy"). Body text and headings stay in Cormorant + Montserrat — only this one role swaps font.
+      </div>
+    </section>
+
+    <!-- 4. SACRAMENTO QUOTE -->
+    <section class="compare">
+      <div class="section-title">
+        <small>4 of 6 · Italic flourishes</small>
+        <h2>Sacramento for hand-script moments</h2>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--now">Live now</span>
+        <div class="quote-stage quote-now">
+          <em>"When you sit with us, you're already part of it."</em>
+        </div>
+        <p class="logo-note">Cormorant Garamond italic · same family as the body · subtle.</p>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--brand">Brand book</span>
+        <div class="quote-stage quote-brand">
+          <div>
+            <span class="scr">"When you sit with us, you're already part of it."</span>
+            <small>— from the kitchen</small>
+          </div>
+        </div>
+        <p class="logo-note">Sacramento · hand-script · used sparingly for one moment per page (pull quotes, gift-voucher tagline, charity belief).</p>
+      </div>
+      <div class="legend">
+        <strong>What this changes:</strong> a single ornamental moment per page only — the "we believe" quote on Our Story, the "every booking becomes more" line on Charity, the menu page intro. Not the body italics throughout.
+      </div>
+    </section>
+
+    <!-- 5. HERO -->
+    <section class="compare">
+      <div class="section-title">
+        <small>5 of 6 · Homepage hero</small>
+        <h2>Everything together — in context</h2>
+      </div>
+      <div class="hero-mock hero-mock--now" style="grid-column: 1;">
+        <span class="compare__tag tag--now" style="position:absolute;">Live now</span>
+        <img class="logo-overlay" src="assets/images/rasoi-logo-gold.png" alt="" />
+        <p class="eyebrow">Award-winning Punjabi dining</p>
+        <h1>The waterfront's <em>most-loved table.</em></h1>
+        <p class="sub">Family recipes, charcoal tandoors and a view of the marina.</p>
+      </div>
+      <div class="hero-mock" style="grid-column: 2;">
+        <span class="compare__tag tag--brand" style="position:absolute;">Brand book</span>
+        <img class="logo-overlay" src="assets/brand/Rasoi_Waterfront.svg" alt="" style="height:62px;" />
+        <p class="eyebrow">Award-winning Punjabi dining</p>
+        <h1>The waterfront's <em>most-loved table.</em></h1>
+        <p class="sub">Family recipes, charcoal tandoors and a view of the marina.</p>
+      </div>
+      <div class="legend">
+        <strong>What this changes:</strong> homepage hero overlay (and by extension: about / events / menus heroes). Ink tone deepens to brand spec, gold lifts and lightens, eyebrow font becomes Porter, logo crisps to vector.
+      </div>
+    </section>
+
+    <!-- 6. SANSKRIT -->
+    <section class="compare">
+      <div class="section-title">
+        <small>6 of 6 · Sanskrit identity mark</small>
+        <h2>Bringing back ਰਸੋਈ as a footer signature</h2>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--now">Live now</span>
+        <div class="sanskrit-bare">
+          <span>(Sanskrit mark currently unused on the site)</span>
+        </div>
+        <p class="logo-note">We removed it from the header earlier because it duplicated the logo. The brand pack supplies it as a separate piece.</p>
+      </div>
+      <div class="compare__col">
+        <span class="compare__tag tag--brand">Brand book</span>
+        <div class="sanskrit-stage">
+          <img src="assets/brand/Rasoi_GoldSanskrit.svg" alt="ਰਸੋਈ in Sanskrit" />
+          <div class="footer-mock">Award-winning Punjabi dining on the Swansea waterfront</div>
+        </div>
+        <p class="logo-note">Used once, as a footer signature above the copyright line. Quiet, on-brand, doesn't compete with the header.</p>
+      </div>
+      <div class="legend">
+        <strong>What this changes:</strong> adds a 60–80px gold ਰਸੋਈ mark above the footer text on all pages. One small, considered re-introduction — not a header element.
+      </div>
+    </section>
+
+    <!-- Footer note -->
+    <div class="footer-note">
+      <p>Reply <strong>"ship 1, 2, 3, 4"</strong> to apply just the logo + palette + Porter eyebrows. Or pick any combination — <strong>"ship all"</strong>, <strong>"ship 1 and 2 only"</strong>, etc. Layout, copy and image positions stay exactly as they are now.</p>
+    </div>
+
+  </div>
+</body>
+</html>
