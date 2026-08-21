@@ -17,15 +17,15 @@ Then visit http://localhost:8000 in your browser.
 FILES
 -----
   index.html          — homepage
-  menus.html           — menu hub (links to PDFs)
-  about.html           — brothers' story + awards
-  events.html          — private dining + catering + enquiry form
-  contact.html         — address, hours, map, gift vouchers
+  menus.html          — menu hub (links to PDFs)
+  about.html          — brothers' story + awards
+  events.html         — private dining + catering + enquiry form
+  contact.html        — address, hours, map, gift vouchers
   assets/
     styles.css        — all styling
     script.js         — nav, scroll effects, reveal animations
     images/           — logo + hero food shot + interior mood shots
-    menus/             — PDF menus (main, lunch, brunch, cocktails)
+    menus/            — PDF menus (main, lunch, brunch, cocktails)
 
 DESIGN NOTES
 ------------
