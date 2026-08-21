@@ -6,28 +6,26 @@ current Elementor/WordPress site. Five pages, no build step, no dependencies.
 
 HOW TO PREVIEW
 --------------
-Just open site/index.html in any browser (double-click is fine). For a
+Just open index.html in any browser (double-click is fine). For a
 better experience with relative paths & fonts, run a simple local server
 from this folder:
 
-    cd "site"
     python3 -m http.server 8000
 
 Then visit http://localhost:8000 in your browser.
 
 FILES
 -----
-  site/
-    index.html          — homepage
-    menus.html          — menu hub (links to PDFs)
-    about.html          — brothers' story + awards
-    events.html         — private dining + catering + enquiry form
-    contact.html        — address, hours, map, gift vouchers
-    assets/
-      styles.css        — all styling
-      script.js         — nav, scroll effects, reveal animations
-      images/           — logo + hero food shot + interior mood shots
-      menus/            — PDF menus (main, lunch, brunch, cocktails)
+  index.html          — homepage
+  menus.html          — menu hub (links to PDFs)
+  about.html          — brothers' story + awards
+  events.html         — private dining + catering + enquiry form
+  contact.html        — address, hours, map, gift vouchers
+  assets/
+    styles.css        — all styling
+    script.js         — nav, scroll effects, reveal animations
+    images/           — logo + hero food shot + interior mood shots
+    menus/            — PDF menus (main, lunch, brunch, cocktails)
 
 DESIGN NOTES
 ------------
