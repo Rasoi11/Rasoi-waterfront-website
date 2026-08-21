@@ -1761,6 +1761,31 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   text-align: left;
 }
 
+/* Set-menu pricing callout, sits between Start Small and Mains */
+.menu-callout {
+  margin: 8px 0 40px;
+  padding: 18px 24px;
+  max-width: 480px;
+  background: var(--cream-2);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+}
+.menu-callout__price {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+.menu-callout__price .diet { margin-left: 8px; }
+.menu-callout__note {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--charcoal);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
 /* Allergen advisory notice on the menu page */
 .menu-allergen-note {
   margin: 64px auto 0;
