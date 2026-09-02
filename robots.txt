@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /allergen-guide.html
+Disallow: /assets/menus/allergen-guide.pdf
