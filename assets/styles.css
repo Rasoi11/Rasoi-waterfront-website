@@ -1439,6 +1439,40 @@ p { margin: 0 0 1em; color: var(--charcoal); }
 }
 .contact-map iframe { width: 100%; height: 560px; border: 0; display: block; }
 
+/* -------- Allergen guide page -------- */
+.allergen-guide { max-width: 860px; }
+.allergen-guide__notice {
+  background: var(--cream-2);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 32px 36px;
+  margin-bottom: 40px;
+}
+.allergen-guide__notice h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.allergen-guide__list { margin: 0; padding-left: 20px; }
+.allergen-guide__list li {
+  color: var(--charcoal);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.allergen-guide__list li:last-child { margin-bottom: 0; }
+.allergen-guide__pdf {
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  margin-bottom: 28px;
+}
+.allergen-guide__pdf iframe { width: 100%; height: 80vh; min-height: 480px; border: 0; display: block; }
+.allergen-guide__cta { text-align: center; }
+@media (max-width: 720px) {
+  .allergen-guide__notice { padding: 24px 22px; }
+}
+
 /* -------- Responsive -------- */
 @media (max-width: 960px) {
   .header__inner { grid-template-columns: auto 1fr auto auto; gap: 14px; }
