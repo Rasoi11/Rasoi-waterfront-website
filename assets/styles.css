@@ -233,6 +233,23 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   border-color: var(--charcoal);
 }
 .btn--gold:hover { background: var(--charcoal); border-color: var(--charcoal); }
+.btn--christmas {
+  background: #7a1522;
+  color: var(--cream);
+  border-color: var(--gold-500);
+}
+.btn--christmas:hover { background: #5c1019; border-color: var(--gold-400); color: var(--cream); }
+
+/* -------- Compact festive hours strip -------- */
+.xmas-hours { padding: 28px 0; }
+.xmas-hours__inner { max-width: 480px; text-align: center; }
+.xmas-hours .eyebrow { margin-bottom: 14px; }
+.xmas-hours .hours {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: 4px 24px;
+  text-align: left;
+}
 
 .link-arrow {
   display: inline-flex;
