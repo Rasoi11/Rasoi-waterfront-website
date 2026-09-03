@@ -1486,6 +1486,13 @@ p { margin: 0 0 1em; color: var(--charcoal); }
 }
 .allergen-guide__pdf iframe { width: 100%; height: 80vh; min-height: 480px; border: 0; display: block; }
 .allergen-guide__cta { text-align: center; }
+.menu-pdf {
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  margin-bottom: 28px;
+}
+.menu-pdf iframe { width: 100%; height: 80vh; min-height: 480px; border: 0; display: block; }
+.menu-pdf__cta { text-align: center; }
 @media (max-width: 720px) {
   .allergen-guide__notice { padding: 24px 22px; }
 }
