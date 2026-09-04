@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=29" />
+  <link rel="stylesheet" href="assets/styles.css?v=30" />
   <link rel="preload" as="image" href="assets/images/menus-hero.jpg" fetchpriority="high" />
   <link rel="icon" type="image/png" href="assets/brand/Rasoi_GoldSanskrit.svg?v=2" />
   <link rel="canonical" href="https://www.rasoiwaterfront.co.uk/menus.html" />
@@ -93,6 +93,7 @@
         <li><button class="menu-tab is-active" role="tab" aria-selected="true" data-target="alacarte">Main Menu</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="lunch">Lunch</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="brunch">Bottomless Brunch</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="beaujolais">Beaujolais</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="vegan">Vegan</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="cocktails">Cocktails</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="wine">Wine</button></li>
@@ -292,6 +293,22 @@
             <div class="dish dish--line"><h4>Selection of Chutneys <span class="price">4.00</span> <span class="diet">V GF</span></h4></div>
           </div>
         </details>
+      </article>
+
+      <!-- BEAUJOLAIS -->
+      <article class="menu-pane" id="beaujolais" role="tabpanel" hidden>
+        <p class="menu-pane__intro">Our Beaujolais evening menu, 2026.</p>
+
+        <div class="menu-pdf">
+          <iframe
+            src="assets/menus/beaujolais-menu-2026.pdf"
+            title="Rasoi Waterfront Beaujolais Menu 2026"
+            loading="lazy"></iframe>
+        </div>
+
+        <div class="menu-pdf__cta">
+          <a href="assets/menus/beaujolais-menu-2026.pdf" target="_blank" rel="noopener" class="btn btn--primary btn--large">Open the Beaujolais Menu (PDF)</a>
+        </div>
       </article>
 
       <!-- VEGAN MENU -->
