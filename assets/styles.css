@@ -1737,6 +1737,7 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   margin: 0;
   letter-spacing: 0.005em;
   line-height: 1.35;
+  text-transform: none;
 }
 .price {
   font-family: var(--font-display);
@@ -1781,6 +1782,8 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   flex-wrap: wrap;
   align-items: baseline;
   gap: 4px 10px;
+  text-transform: none;
+  letter-spacing: 0.005em;
 }
 
 /* Mobile tweaks */
