@@ -77,7 +77,8 @@
     }
   }
 
-  // Christmas popup — shows once per visit, a few seconds after landing.
+  // Christmas popup — shows once per visit, right on landing (before a
+  // fast "Book" click can carry someone off to SevenRooms unseen).
   // Skipped on the Christmas page itself, since the visitor is already there.
   (function () {
     if (/(^|\/)christmas\.html$/.test(location.pathname)) return;
@@ -129,7 +130,7 @@
         if (e.target === overlay) close();
       });
       document.addEventListener('keydown', onKeydown);
-    }, 4500);
+    }, 250);
   })();
 
   // Content is always visible. We reserve reveal animations for the manual
