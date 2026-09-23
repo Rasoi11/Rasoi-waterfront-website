@@ -2046,6 +2046,71 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   .pull-quote p { font-size: 1.05rem; }
 }
 
+/* -------- Christmas popup -------- */
+.xmas-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(31,34,40,0.62);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s var(--easing), visibility .35s var(--easing);
+}
+.xmas-popup-overlay.is-visible { opacity: 1; visibility: visible; }
+.xmas-popup {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: var(--cream);
+  border: 1px solid var(--gold-500);
+  padding: 46px 38px 36px;
+  text-align: center;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.4);
+  transform: translateY(18px) scale(0.97);
+  transition: transform .35s var(--easing);
+}
+.xmas-popup-overlay.is-visible .xmas-popup { transform: translateY(0) scale(1); }
+.xmas-popup__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--charcoal);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background .2s var(--easing), color .2s var(--easing);
+}
+.xmas-popup__close:hover { background: var(--sand); color: var(--ink); }
+.xmas-popup .eyebrow { color: #7a1522; margin-bottom: 12px; }
+.xmas-popup .display { font-size: clamp(1.7rem, 4vw, 2.1rem); margin-bottom: 14px; }
+.xmas-popup .display em { color: #7a1522; }
+.xmas-popup p:not(.eyebrow) { font-size: 0.92rem; line-height: 1.65; margin-bottom: 26px; }
+.xmas-popup__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+body.xmas-popup-open { overflow: hidden; }
+
+@media (max-width: 520px) {
+  .xmas-popup { padding: 42px 24px 28px; }
+  .xmas-popup__ctas { flex-direction: column; }
+  .xmas-popup__ctas .btn { width: 100%; }
+}
+
 /* -------- Motion -------- */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--easing), transform .7s var(--easing); }
 .reveal.is-visible { opacity: 1; transform: none; }
