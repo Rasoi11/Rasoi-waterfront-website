@@ -2046,6 +2046,98 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   .pull-quote p { font-size: 1.05rem; }
 }
 
+/* -------- Christmas popup -------- */
+.xmas-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(31,34,40,0.62);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s var(--easing), visibility .35s var(--easing);
+}
+.xmas-popup-overlay.is-visible { opacity: 1; visibility: visible; }
+.xmas-popup {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  transform: translateY(18px) scale(0.97);
+  transition: transform .35s var(--easing);
+}
+.xmas-popup-overlay.is-visible .xmas-popup { transform: translateY(0) scale(1); }
+.xmas-popup__panels {
+  display: flex;
+  min-height: 400px;
+  background: var(--cream);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.4);
+}
+.xmas-popup__media { flex: 1 1 46%; }
+.xmas-popup__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.xmas-popup__body {
+  flex: 1 1 54%;
+  padding: 44px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.xmas-popup__body .eyebrow { margin-bottom: 14px; }
+.xmas-popup__body .display { font-size: clamp(1.8rem, 3.4vw, 2.3rem); margin-bottom: 16px; }
+.xmas-popup__body .display em { color: #7a1522; }
+.xmas-popup__body p { font-size: 0.94rem; line-height: 1.7; margin-bottom: 24px; }
+.xmas-popup__cta { align-self: flex-start; }
+.xmas-popup__dismiss {
+  align-self: flex-start;
+  margin-top: 14px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.xmas-popup__dismiss:hover { color: var(--ink); }
+.xmas-popup__close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  color: var(--charcoal);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transition: background .2s var(--easing), color .2s var(--easing);
+}
+.xmas-popup__close:hover { background: var(--sand); color: var(--ink); }
+body.xmas-popup-open { overflow: hidden; }
+
+@media (max-width: 720px) {
+  .xmas-popup__panels { flex-direction: column; min-height: 0; }
+  .xmas-popup__media { flex-basis: auto; height: 180px; }
+  .xmas-popup__body { padding: 36px 26px; }
+  .xmas-popup__close { top: 10px; right: 10px; }
+}
+
 /* -------- Motion -------- */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--easing), transform .7s var(--easing); }
 .reveal.is-visible { opacity: 1; transform: none; }
