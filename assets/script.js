@@ -95,12 +95,15 @@
       overlay.innerHTML =
         '<div class="xmas-popup" role="dialog" aria-modal="true" aria-labelledby="xmas-popup-title">' +
           '<button type="button" class="xmas-popup__close" aria-label="Close">&times;</button>' +
-          '<p class="eyebrow eyebrow--center">Christmas 2026</p>' +
-          '<h2 id="xmas-popup-title" class="display">A very Rasoi <em>Christmas.</em></h2>' +
-          '<p>Festive set lunch, set dinner and Christmas cocktails on the Swansea waterfront. Spaces fill fast — reserve your table.</p>' +
-          '<div class="xmas-popup__ctas">' +
-            '<a href="christmas.html" class="btn btn--christmas btn--sm">View Christmas Menu</a>' +
-            '<a href="christmas.html#book" class="btn btn--outline btn--sm">Book a Table</a>' +
+          '<div class="xmas-popup__panels">' +
+            '<div class="xmas-popup__media"><img src="assets/images/christmas-team.jpg" alt="" /></div>' +
+            '<div class="xmas-popup__body">' +
+              '<p class="eyebrow">Christmas 2026</p>' +
+              '<h2 id="xmas-popup-title" class="display">A very Rasoi <em>Christmas.</em></h2>' +
+              '<p>Join us this festive season for our Christmas set lunch, set dinner and cocktails, plus a New Year’s Eve to remember.</p>' +
+              '<a href="christmas.html" class="btn btn--christmas xmas-popup__cta">See our Christmas menu</a>' +
+              '<button type="button" class="xmas-popup__dismiss">No thanks</button>' +
+            '</div>' +
           '</div>' +
         '</div>';
       document.body.appendChild(overlay);
@@ -108,6 +111,7 @@
       requestAnimationFrame(function () { overlay.classList.add('is-visible'); });
 
       var closeBtn = overlay.querySelector('.xmas-popup__close');
+      var dismissBtn = overlay.querySelector('.xmas-popup__dismiss');
       closeBtn.focus();
 
       function close() {
@@ -120,6 +124,7 @@
         if (e.key === 'Escape') close();
       }
       closeBtn.addEventListener('click', close);
+      dismissBtn.addEventListener('click', close);
       overlay.addEventListener('click', function (e) {
         if (e.target === overlay) close();
       });
