@@ -123,10 +123,13 @@
           '<div class="xmas-popup__panels">' +
             '<div class="xmas-popup__media"><img src="assets/images/christmas-team.jpg" alt="" /></div>' +
             '<div class="xmas-popup__body">' +
-              '<p class="eyebrow">Christmas 2026</p>' +
-              '<h2 id="xmas-popup-title" class="display">A very Rasoi <em>Christmas.</em></h2>' +
-              '<p>Join us this festive season for our Christmas set lunch, set dinner and cocktails, plus our New Year’s Eve set menus for lunch and dinner.</p>' +
-              '<a href="christmas.html" class="btn btn--christmas xmas-popup__cta">See our Christmas menu</a>' +
+              '<p class="eyebrow">Christmas &amp; New Year 2026</p>' +
+              '<h2 id="xmas-popup-title" class="display">Christmas &amp; <em>New Year’s Eve.</em></h2>' +
+              '<p>Join us this festive season for our Christmas and New Year’s Eve set menus, plus full opening times over the holidays.</p>' +
+              '<div class="xmas-popup__ctas">' +
+                '<a href="christmas.html" class="btn btn--christmas xmas-popup__cta">Christmas menu</a>' +
+                '<a href="christmas.html#nye-dinner" class="btn btn--outline xmas-popup__cta">New Year’s Eve menu</a>' +
+              '</div>' +
               '<button type="button" class="xmas-popup__dismiss">No thanks</button>' +
             '</div>' +
           '</div>' +
