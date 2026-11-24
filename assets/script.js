@@ -39,12 +39,19 @@
   const menuTabs = document.querySelectorAll('.menu-tab');
   const menuPanes = document.querySelectorAll('.menu-pane');
   if (menuTabs.length && menuPanes.length) {
-    const activate = (target) => {
+    const activate = (target, forceScroll) => {
       menuTabs.forEach(b => {
         const on = b.dataset.target === target;
         b.classList.toggle('is-active', on);
         b.setAttribute('aria-selected', on ? 'true' : 'false');
       });
+      // Keep the active tab visible in the (horizontally scrolling) tab bar.
+      const list = document.querySelector('.menu-tabs__list');
+      const btn = document.querySelector('.menu-tab[data-target="' + target + '"]');
+      if (list && btn && list.scrollWidth > list.clientWidth) {
+        const lr = list.getBoundingClientRect(), br = btn.getBoundingClientRect();
+        list.scrollTo({ left: list.scrollLeft + br.left - lr.left - (lr.width - br.width) / 2, behavior: 'smooth' });
+      }
       menuPanes.forEach(p => {
         const on = p.id === target;
         p.classList.toggle('is-active', on);
@@ -55,26 +62,43 @@
         }
       });
       // Smoothly bring the menu section into view (without jumping past header).
-      if (window.scrollY > 200) {
+      if (forceScroll || window.scrollY > 200) {
         const sec = document.querySelector('.menu-section');
         if (sec) {
           const headerH = (document.getElementById('site-header') || {}).offsetHeight || 0;
           const tabsH = (document.querySelector('.menu-tabs') || {}).offsetHeight || 0;
           const y = sec.getBoundingClientRect().top + window.scrollY - headerH - tabsH - 16;
-          window.scrollTo({ top: y, behavior: 'smooth' });
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
         }
       }
     };
     menuTabs.forEach(btn => {
       btn.addEventListener('click', () => activate(btn.dataset.target));
     });
-    // Hash-link support — e.g. /menus.html#cocktails opens that pane.
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      if (document.getElementById(id) && document.querySelector('.menu-pane#' + CSS.escape(id))) {
-        activate(id);
-      }
-    }
+    // Hash-link support — e.g. /menus.html#cocktails or /christmas.html#nye-dinner
+    // opens that pane, on page load and when the hash changes on the same page.
+    const paneFromHash = (hash) => {
+      const id = decodeURIComponent((hash || '').replace('#', ''));
+      if (!id) return null;
+      const pane = document.getElementById(id);
+      return pane && pane.classList.contains('menu-pane') ? id : null;
+    };
+    const initial = paneFromHash(location.hash);
+    if (initial) activate(initial, true);
+    window.addEventListener('hashchange', () => {
+      const id = paneFromHash(location.hash);
+      if (id) activate(id, true);
+    });
+    // Re-clicking a link to the hash that's already in the URL fires no
+    // hashchange, so handle same-page pane links directly too.
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest && e.target.closest('a[href*="#"]');
+      if (!a || a.origin !== location.origin || a.pathname !== location.pathname) return;
+      const id = paneFromHash(a.hash);
+      if (!id || a.hash !== location.hash) return;
+      e.preventDefault();
+      activate(id, true);
+    });
   }
 
   // Christmas popup — shows once per visit, right on landing (before a
@@ -101,7 +125,7 @@
             '<div class="xmas-popup__body">' +
               '<p class="eyebrow">Christmas 2026</p>' +
               '<h2 id="xmas-popup-title" class="display">A very Rasoi <em>Christmas.</em></h2>' +
-              '<p>Join us this festive season for our Christmas set lunch, set dinner and cocktails, plus a New Year’s Eve to remember.</p>' +
+              '<p>Join us this festive season for our Christmas set lunch, set dinner and cocktails, plus our New Year’s Eve set menus for lunch and dinner.</p>' +
               '<a href="christmas.html" class="btn btn--christmas xmas-popup__cta">See our Christmas menu</a>' +
               '<button type="button" class="xmas-popup__dismiss">No thanks</button>' +
             '</div>' +

@@ -1168,7 +1168,7 @@ p { margin: 0 0 1em; color: var(--charcoal); }
 .page-hero--image p { color: rgba(247,239,223,0.82); }
 @media (max-width: 600px) {
   .page-hero--image { min-height: min(48vh, 420px); }
-  .page-hero__content { padding: 80px 0 70px; }
+  .page-hero__content { padding: 80px var(--gutter) 70px; }
 }
 
 /* -------- Menus page -------- */
@@ -1507,11 +1507,15 @@ p { margin: 0 0 1em; color: var(--charcoal); }
     background: var(--cream);
     padding: 110px 40px 40px;
     transform: translateX(100%);
-    transition: transform .3s var(--easing);
-    box-shadow: -20px 0 40px rgba(23,20,15,0.12);
+    transition: transform .3s var(--easing), box-shadow .3s var(--easing);
+    box-shadow: none; /* shadow only when open — it bled onto the page edge when closed */
     border-left: 1px solid var(--border-soft);
   }
-  .nav.is-open { transform: translateX(0); }
+  .nav.is-open { transform: translateX(0); box-shadow: -20px 0 40px rgba(23,20,15,0.12); }
+  /* backdrop-filter turns the header into the containing block for the fixed
+     .nav, which squashed the open menu to header height and pushed the hidden
+     menu into the page width (sideways scroll) once scrolled. Solid bg instead. */
+  .header.is-scrolled { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--cream); }
   .nav ul { flex-direction: column; gap: 24px; align-items: flex-start; }
   .nav a { font-size: 0.85rem; }
   .nav-toggle { display: flex; order: 3; justify-self: end; margin-left: 4px; }
@@ -1827,6 +1831,9 @@ p { margin: 0 0 1em; color: var(--charcoal); }
   font-family: var(--font-body);
 }
 .menu-allergen-note strong { color: var(--ink); font-weight: 600; }
+/* NYE panes carry their own allergen line (from the NYE menu PDF, incl. nuts),
+   so hide the shared Christmas note below them to avoid two stacked notes. */
+.menu-pane[id^="nye-"].is-active ~ .menu-allergen-note { display: none; }
 .menu-allergen-note .diet { font-size: 0.55rem; padding: 1px 5px; }
 @media (max-width: 720px) {
   .menu-allergen-note {
