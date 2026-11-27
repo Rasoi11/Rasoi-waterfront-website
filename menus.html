@@ -92,6 +92,7 @@
       <ul class="menu-tabs__list" role="tablist">
         <li><button class="menu-tab is-active" role="tab" aria-selected="true" data-target="alacarte">Main Menu</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="lunch">Lunch</button></li>
+        <li><button class="menu-tab" role="tab" aria-selected="false" data-target="setdinner">Set Dinner</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="vegan">Vegan</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="cocktails">Cocktails</button></li>
         <li><button class="menu-tab" role="tab" aria-selected="false" data-target="wine">Wine</button></li>
@@ -285,6 +286,89 @@
             <div class="dish dish--line"><h4>Pilau Rice</h4></div>
             <div class="dish dish--line"><h4>Chips</h4></div>
             <div class="dish dish--line"><h4>Masala Chips</h4></div>
+          </div>
+        </details>
+
+        <p class="menu-pane__legend"><span class="diet">V</span> Vegetarian &nbsp; <span class="diet">VE</span> Vegan &nbsp; <span class="diet">GF</span> Gluten free.</p>
+      </article>
+
+      <!-- SET DINNER (Christmas Set Dinner) -->
+      <article class="menu-pane" id="setdinner" role="tabpanel" hidden>
+        <p class="menu-pane__intro"><strong>Christmas Set Dinner · Served through December, from 5pm.</strong> Two courses £27 · Three courses £31, served with a side.</p>
+
+        <details class="menu-cat" open>
+          <summary><span class="menu-cat__name">For the Table</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Poppadoms <span class="price">1.10 each</span></h4></div><p>Traditional crisp lentil poppadoms. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Far Far <span class="price">3.50</span></h4></div><p>Colourful Indian-style crispy snacks. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chutney Selection <span class="price">4.00</span></h4></div><p>Mint yoghurt, spicy tomato, onion salsa and mango chutney. <span class="diet">V GF</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Starters</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <p class="menu-cat__note">Choose one.</p>
+            <div class="dish"><div class="dish__head"><h4>Samosa Chaat</h4></div><p>Punjabi samosa, chickpeas, yoghurt, mint, tamarind and pomegranate. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chilli Paneer</h4></div><p>Tossed with peppers, onions, chilli and garlic. <span class="diet">V GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Mixed Vegetable Pakora</h4></div><p>Gram-flour-coated vegetables, garlic chutney. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka</h4></div><p>Mint and yoghurt marinade, cooked in the tandoor. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Galuti Kebab</h4></div><p>Delicately spiced lamb, served on roti.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Main Courses</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Punjabi Murgh Masala</h4></div><p>Chicken tikka, rich medium-spiced masala. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Chicken Korma</h4></div><p>Mild, creamy coconut sauce with almond flakes. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Lamb Rogan Josh <span class="diet">Upgrade £4</span></h4></div><p>Tomatoes, Kashmiri chilli and aromatic spices. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Black Daal</h4></div><p>Slow-cooked black lentils, butter and cream. <span class="diet">V GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Vegan Jalfrezi</h4></div><p>Mixed vegetables and peppers, vibrant tomato. <span class="diet">V VE GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Punjabi Shahi Paneer</h4></div><p>Rich and creamy Punjabi-style sauce. <span class="diet">V GF</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Biryani</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Lucknow Chicken Biryani</h4></div><p>Basmati layered with chicken and biryani spices.</p></div>
+            <div class="dish"><div class="dish__head"><h4>Delhi Vegetable Biryani</h4></div><p>Basmati layered with vegetables and biryani spices. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Hyderabadi Lamb Biryani <span class="diet">Upgrade £4</span></h4></div><p>Basmati layered with lamb, slow-cooked on dum.</p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Grill</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Chicken Tikka Shashlik <span class="diet">Upgrade £2</span></h4></div><p>Peppers and onions, makhani sauce. <span class="diet">GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Paneer Tikka Shashlik <span class="diet">Upgrade £2</span></h4></div><p>Lightly spiced paneer, peppers and onions from the tandoor. <span class="diet">V GF</span></p></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Side Orders</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body menu-cat__body--cols">
+            <p class="menu-cat__note">One side included with each main course. Not included with biryani dishes.</p>
+            <div class="dish dish--line"><h4>Tandoori Naan</h4></div>
+            <div class="dish dish--line"><h4>Peshawari Naan</h4></div>
+            <div class="dish dish--line"><h4>Garlic &amp; Coriander Naan</h4></div>
+            <div class="dish dish--line"><h4>Cheese Naan</h4></div>
+            <div class="dish dish--line"><h4>Keema Naan</h4></div>
+            <div class="dish dish--line"><h4>Steamed Rice</h4></div>
+            <div class="dish dish--line"><h4>Mushroom Rice</h4></div>
+            <div class="dish dish--line"><h4>Keema Rice</h4></div>
+            <div class="dish dish--line"><h4>Pilau Rice</h4></div>
+          </div>
+        </details>
+
+        <details class="menu-cat">
+          <summary><span class="menu-cat__name">Festive Desserts</span><span class="menu-cat__chev">+</span></summary>
+          <div class="menu-cat__body">
+            <div class="dish"><div class="dish__head"><h4>Gulab Jamun Cheesecake</h4></div><p>Creamy cheesecake topped with gulab jamun. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Sticky Toffee Pudding</h4></div><p>Warm pudding, toffee sauce, vanilla ice cream. <span class="diet">V</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Malai Kulfi</h4></div><p>Topped with pistachios. <span class="diet">V GF</span></p></div>
+            <div class="dish"><div class="dish__head"><h4>Mango Sorbet</h4></div><p>Refreshing sorbet made with sweet mango. <span class="diet">V VE GF</span></p></div>
           </div>
         </details>
 
